@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "slash data",
+    "version": "0.1",
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+    "content_scripts": [
+        {
+        "matches": [
+            "https://beta.ons.gov.uk/*",
+            "https://develop.web.ons.digital/*"
+        ],
+        "js": [
+            "jquery-2.1.4.min.js",
+            "slash-data.js"
+            ]
+        }
+    ]
+}
