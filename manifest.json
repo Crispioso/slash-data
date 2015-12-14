@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "slash data",
-    "version": "0.1",
+    "version": "0.2",
     "browser_action": {
         "default_icon": "icon.png"
     },
@@ -9,7 +9,10 @@
         {
         "matches": [
             "https://beta.ons.gov.uk/*",
-            "https://develop.web.ons.digital/*"
+            "https://develop.web.ons.digital/*",
+            "https://staging.web.ons.digital/*",
+            "http://127.0.0.1:8080/*",
+            "http://127.0.0.1:8081/*"
         ],
         "js": [
             "jquery-2.1.4.min.js",
