@@ -8,6 +8,9 @@
             "https://beta.ons.gov.uk/*",
             "https://develop.web.ons.digital/*",
             "https://staging.web.ons.digital/*",
+            "https://cy.beta.ons.gov.uk/*",
+            "https://cy.develop.web.ons.digital/*",
+            "https://cy.staging.web.ons.digital/*",
             "http://127.0.0.1:8080/*",
             "http://127.0.0.1:8081/*"
         ],
