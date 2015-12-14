@@ -14,6 +14,7 @@ The extension is set to only work on beta.ons.gov.uk and the develop environment
 Toggle the data by pressing 'Ctrl+Shift+U'.
 
 ## To do list
-- Add support for all ONS beta environments, local and live.
+- ~~Add support for all ONS beta environments, local and live.~~
+- Fix bug on /datalist end point.
 - Use the Chrome commands API, so you can choose which keyboard shortcut they want for the toggle.
 - Package extension into a single file (.crx?).
