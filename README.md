@@ -13,6 +13,7 @@ Toggle the data by pressing 'Ctrl+Shift+U'.
 
 ## To do list
 - ~~Add support for all ONS beta environments, local and live.~~
-- Fix bug on /datalist end point.
-- Use the Chrome commands API, so you can choose which keyboard shortcut you want for the toggle.
+- ~~Use the Chrome commands API, so you can choose which keyboard shortcut you want for the toggle.~~
+- Fix bug on pages that contain 'data' in the URL somewhere else.
 - Package extension into a single file (.crx?).
+- Add other end points, such as /publications.
