@@ -1,5 +1,5 @@
-# slash-data
-Slash data is chrome extension for beta.ons.gov.uk that toggles between the webpage and the underlying JSON data.
+# slash data
+'slash data' is a chrome extension for beta.ons.gov.uk that toggles between the webpage and the underlying JSON data.
 
 ## Installing
 1. Obviously, you first have to be using Chrome browser! 
