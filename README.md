@@ -5,7 +5,7 @@
 First, obviously, you need to be using Chrome browser! You then have two options:
 
 ### Using a crx file
-1. Download the .crx file from [Google Drive](https://drive.google.com/file/d/0B3WgKEr6-s_HVlFUcUxkeEo1cU0/view?usp=sharing).
+1. Download the .crx file from [Google Drive](https://drive.google.com/file/d/0B3WgKEr6-s_HNkcxMll3ZHduQmc/view?usp=sharing).
 2. Drag and drop it onto the chrome://extensions page.
 3. Check it's enabled.
 
@@ -24,5 +24,5 @@ The keyboard shortcut can be changed in chrome://extensions ('Keyboard shortcuts
 - ~~Add support for all ONS beta environments, local and live.~~
 - ~~Use the Chrome commands API, so you can choose which keyboard shortcut you want for the toggle.~~
 - ~~Package extension into a single file (.crx?).~~
-- Fix bug on pages that contain 'data' in the URL somewhere else.
+- ~~Fix bug on pages that contain 'data' in the URL somewhere else.~~
 - Add other end points, such as /publications.
