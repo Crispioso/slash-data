@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "slash data",
-    "version": "0.2",
+    "version": "0.3",
     "background": {
         "persistent": false,
         "scripts": ["background.js"]
@@ -10,13 +10,12 @@
         {
         "matches": [
             "https://beta.ons.gov.uk/*",
-             "https://develop.web.ons.digital/*",
-             "https://staging.web.ons.digital/*",
-+            "https://cy.beta.ons.gov.uk/*",
-+            "https://cy.develop.web.ons.digital/*",
-+            "https://cy.staging.web.ons.digital/*",
-             "http://127.0.0.1:8080/*",
-             "http://127.0.0.1:8081/*"
+            "https://develop.web.ons.digital/*",
+            "https://staging.web.ons.digital/*",
+            "https://cy.beta.ons.gov.uk/*",
+            "https://cy.develop.web.ons.digital/*",
+            "https://cy.staging.web.ons.digital/*",
+            "http://127.0.0.1:*/*"
         ],
         "js": [
             "jquery-2.1.4.min.js",
