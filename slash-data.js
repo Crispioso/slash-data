@@ -3,19 +3,22 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     console.log("Received command: " + newCommand);
     
     if (newCommand === "json") {
-        var path = window.location.protocol + "//" + window.location.hostname + window.location.pathname;
-            var params = window.location.search;
-            var data = "data";
-            
-            if (!path.match("/$")) {
-                data = "/data";
-            }
-            if (!path.match("data")) {
-                window.location.href = path + data + params;
-            } else {
-                path = path.replace("/data", "/");
-                window.location.href = path + params;
-            }
+        var path = window.location.protocol + "//" + window.location.host + window.location.pathname,
+        params = window.location.search,
+        data = "data",
+        urlEnd = path.match('[^/]+(?=/$|$)');
+        
+        if (!path.match("/$")) {
+            data = "/data";
+        }
+        
+        if (urlEnd[0] !== 'data') {
+            window.location.href = path + data + params;
+        } else {
+            var lastSlash = path.lastIndexOf("/");
+            path = path.substring(0,lastSlash);
+            window.location.href = path + params;
+        }
     }
     
     sendResponse({"action": "Actioned trigger: " + newCommand});
