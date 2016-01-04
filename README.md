@@ -26,3 +26,4 @@ The keyboard shortcut can be changed in chrome://extensions ('Keyboard shortcuts
 - ~~Package extension into a single file (.crx?).~~
 - ~~Fix bug on pages that contain 'data' in the URL somewhere else.~~
 - Add other end points, such as /publications.
+- Allow option to toggle data via button rather than keyboard shortcut.
