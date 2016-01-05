@@ -21,10 +21,10 @@ Toggle the data by pressing 'Ctrl+Shift+U'.
 The keyboard shortcut can be changed in chrome://extensions ('Keyboard shortcuts' is as the very bottom of that page).
 
 ## To do list
+- Allow option to toggle data via button rather than keyboard shortcut.
 - ~~Add support for all ONS beta environments, local and live.~~
 - ~~Use the Chrome commands API, so you can choose which keyboard shortcut you want for the toggle.~~
 - ~~Package extension into a single file (.crx?).~~
 - ~~Fix bug on pages that contain 'data' in the URL somewhere else.~~
 - ~~Add other end points, such as /publications.~~
-- Fix publications & data-list endpoints at root
-- Allow option to toggle data via button rather than keyboard shortcut.
+- ~~Fix publications & data-list endpoints at root~~
