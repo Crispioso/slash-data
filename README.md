@@ -21,6 +21,7 @@ Toggle the data by pressing 'Ctrl+Shift+U'.
 The keyboard shortcut can be changed in chrome://extensions ('Keyboard shortcuts' is as the very bottom of that page).
 
 ## To do list
+- Refactor slash.js file.
 - Allow option to toggle data via button rather than keyboard shortcut.
 - ~~Add support for all ONS beta environments, local and live.~~
 - ~~Use the Chrome commands API, so you can choose which keyboard shortcut you want for the toggle.~~
