@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "slash data",
-    "version": "0.3",
+    "version": "0.4",
     "background": {
         "persistent": false,
         "scripts": ["background.js"]
@@ -29,6 +29,18 @@
                 "default": "Ctrl+Shift+U"
             },
             "description": "Toggle page data"
+        },
+        "publications": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+P"
+            },
+            "description": "Toggle publication end point"
+        },
+        "datalist": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+D"
+            },
+            "description": "Toggle data-list end point"
         }
     }
 }
