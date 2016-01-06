@@ -5,7 +5,7 @@
 First, obviously, you need to be using Chrome browser! You then have two options:
 
 ### Using a crx file
-1. Download the .crx file from [Google Drive](https://drive.google.com/open?id=0B3WgKEr6-s_Hbnh2VUI1TkxVRmc).
+1. Download the .crx file from [Google Drive](https://drive.google.com/open?id=0B3WgKEr6-s_HMnhPNWwtX09OM1E).
 2. Drag and drop it onto the chrome://extensions page.
 3. Check it's enabled.
 
