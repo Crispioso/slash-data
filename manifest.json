@@ -2,6 +2,13 @@
     "manifest_version": 2,
     "name": "slash data",
     "version": "0.4",
+    "page_action": {
+        "default_icon": {
+            "38": "slash-data-icon.png",
+            "19": "slash-data-icon-small.png"
+        },
+        "default_title": "Slash data"
+    },
     "background": {
         "persistent": false,
         "scripts": ["background.js"]
@@ -12,9 +19,6 @@
             "https://beta.ons.gov.uk/*",
             "https://develop.web.ons.digital/*",
             "https://staging.web.ons.digital/*",
-            "https://cy.beta.ons.gov.uk/*",
-            "https://cy.develop.web.ons.digital/*",
-            "https://cy.staging.web.ons.digital/*",
             "http://127.0.0.1:*/*"
         ],
         "js": [
@@ -42,5 +46,9 @@
             },
             "description": "Toggle data-list end point"
         }
-    }
+    },
+    "permissions": [
+        "declarativeContent",
+        "tabs"
+    ]
 }
