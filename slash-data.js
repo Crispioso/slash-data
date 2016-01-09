@@ -17,13 +17,15 @@ var path = window.location.pathname,
 
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     var newCommand = request.command;
-    console.log("Received command: " + newCommand);
+    var pageAction = request.message;
+    // console.log("Received command: " + newCommand);
+    // console.log(request);
     
     if (!path.match("/$")) {
         data = "/data";
     }
     
-    if (newCommand === "json") { // Toggle JSON endpoint
+    if (newCommand === "json" || pageAction) { // Toggle JSON endpoint
         var params = window.location.search;
         if (!urlEnd || urlEnd[0] !== 'data') {
             window.location.href = domain + path + data + params;
@@ -50,5 +52,11 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
         }
     }
     
-    sendResponse({"action": "Actioned trigger: " + newCommand});
+    if (newCommand) {
+        sendResponse({"action": newCommand});
+    }
+    if (pageAction) {
+        sendResponse({"action": pageAction});
+    }
+    
 });
