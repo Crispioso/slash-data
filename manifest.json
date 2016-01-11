@@ -19,6 +19,9 @@
             "https://beta.ons.gov.uk/*",
             "https://develop.web.ons.digital/*",
             "https://staging.web.ons.digital/*",
+            "https://publishing.beta.ons.gov.uk/*",
+            "https://publishing.develop.web.ons.digital/*",
+            "https://publishing.staging.web.ons.digital/*",
             "http://127.0.0.1:*/*"
         ],
         "js": [
