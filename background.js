@@ -11,10 +11,10 @@ function sendMessage(messageObject) {
         chrome.tabs.sendMessage(tabs[0].id, messageObject, function(response) {
             var responseMessage = {};
             responseMessage[0] = response
-            console.log(responseMessage);
+            // console.log(responseMessage);
             return responseMessage;
         });
-        console.log(tabs);
+        // console.log(tabs);
     });
 }
 
@@ -23,23 +23,26 @@ var rules = [];
 var domain;
 
 for (var i = 0; i < urlMatches.length; i++) {
-    domain = urlMatches[i].match(/([a-z0-9-.]*)\.([a-z0-9-.]{2,12})/gm).toString();
-    rules[i] = {
-        conditions: [
-            new chrome.declarativeContent.PageStateMatcher({
-                pageUrl: { hostEquals: domain }
-            })
-        ],
-        actions: [ new chrome.declarativeContent.ShowPageAction() ]
-    };
-    declarativeContentChrome(rules[i]);
+    domainObj = urlMatches[i].match(/([a-z0-9-.]*)\.([a-z0-9-.]{2,12})/gm);
+    if (domainObj) {
+        domain = domainObj.toString();
+        rules[i] = {
+            conditions: [
+                new chrome.declarativeContent.PageStateMatcher({
+                    pageUrl: { hostEquals: domain }
+                })
+            ],
+            actions: [ new chrome.declarativeContent.ShowPageAction() ]
+        };
+        declarativeContentChrome(rules[i]);
+    }
 }
 
 chrome.pageAction.onClicked.addListener(function(tab) {
     var pageAction = true;
     var messageResponse = sendMessage({message: pageAction});
     // sendMessage({message: pageAction});
-    console.log(messageResponse);
+    // console.log(messageResponse);
 });
 
 chrome.commands.onCommand.addListener(function(command) {

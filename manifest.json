@@ -17,12 +17,23 @@
         {
         "matches": [
             "https://beta.ons.gov.uk/*",
+            "https://*.beta.ons.gov.uk/*",
             "https://develop.web.ons.digital/*",
+            "https://*.develop.web.ons.digital/*",
             "https://staging.web.ons.digital/*",
+            "https://*.staging.web.ons.digital/*",
             "https://publishing.beta.ons.gov.uk/*",
+            "https://*.publishing.beta.ons.gov.uk/*",
             "https://publishing.develop.web.ons.digital/*",
+            "https://*.publishing.develop.web.ons.digital/*",
             "https://publishing.staging.web.ons.digital/*",
-            "http://127.0.0.1:*/*"
+            "https://*.publishing.staging.web.ons.digital/*",
+            "http://127.0.0.1:8080/*",
+            "http://*.127.0.0.1:8080/*",
+            "http://127.0.0.1:8081/*",
+            "http://*.127.0.0.1:8081/*",
+            "http://localhost:8080/*",
+            "http://*.localhost:8080/*"
         ],
         "js": [
             "jquery-2.1.4.min.js",
@@ -33,19 +44,22 @@
     "commands": {
         "json": {
             "suggested_key": {
-                "default": "Ctrl+Shift+U"
+                "default": "Ctrl+Shift+U",
+                "mac": "MacCtrl+Shift+U"
             },
             "description": "Toggle page data"
         },
         "publications": {
             "suggested_key": {
-                "default": "Ctrl+Shift+P"
+                "default": "Ctrl+Shift+P",
+                "mac": "MacCtrl+Shift+P"
             },
             "description": "Toggle publication end point"
         },
         "datalist": {
             "suggested_key": {
-                "default": "Ctrl+Shift+D"
+                "default": "Ctrl+Shift+D",
+                "mac": "MacCtrl+Shift+D"
             },
             "description": "Toggle data-list end point"
         }

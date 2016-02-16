@@ -18,7 +18,7 @@ var path = window.location.pathname,
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     var newCommand = request.command;
     var pageAction = request.message;
-    // console.log("Received command: " + newCommand);
+    console.log("Received command: " + newCommand);
     // console.log(request);
     
     if (!path.match("/$")) {
@@ -40,7 +40,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
         }
         if (!urlEnd || urlEnd[0] === "search") { // Add endpoint to absolute root
             window.location.href = domain + "/" + newCommand;
-            console.log(path);
+            // console.log(path);
         } else if (taxonomy.indexOf(urlEnd[0]) > -1 && newCommand.indexOf(urlEnd[0]) == -1) { // Toggle endpoints if on normal taxonomy page
             window.location.href = domain + path + newCommand;
         } else if (newCommand.indexOf(urlEnd[0]) > -1 && !atRoot) { // Remove endpoint if matches current command - exclude root/search page
