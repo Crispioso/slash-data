@@ -16,6 +16,8 @@
     "content_scripts": [
         {
         "matches": [
+            "https://www.ons.gov.uk/*",
+            "https://*.ons.gov.uk/*",
             "https://beta.ons.gov.uk/*",
             "https://*.beta.ons.gov.uk/*",
             "https://develop.web.ons.digital/*",
@@ -33,7 +35,10 @@
             "http://127.0.0.1:8081/*",
             "http://*.127.0.0.1:8081/*",
             "http://localhost:8080/*",
-            "http://*.localhost:8080/*"
+            "http://*.localhost:8080/*",
+            "http://localhost:8081/*",
+            "http://*.dev.onsdigital.co.uk:8080/*",
+            "http://*.dev.onsdigital.co.uk:8081/*"
         ],
         "js": [
             "jquery-2.1.4.min.js",
